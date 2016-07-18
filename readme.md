@@ -50,6 +50,12 @@ void Main(string[] args) {
 
 반환값이 있는 대기 가능 메소드 만들기
 ----
+```cs
+async Task<int> SumAsync(int a,int b) {
+  await Task.Delay(100);
+  return a + b;
+}
+```
 
 진짜로 비동기로 동작하는 메소드 만들기
 ----
