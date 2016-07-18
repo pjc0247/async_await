@@ -25,6 +25,7 @@ async void MyFirstAsyncMethod() {
 ```
 코드를 실행시키면 예상과는 다른 결과가 나타날 것입니다.<br>
 실제로 `After Delay` 부분은 전혀 출력되지 않은 채 프로그램이 종료됩니다. 심지어 1초동안 `Delay` 하는 코드조차도 실행되지 않은것처럼 보입니다.<br>
+<br>
 만약 `Threading`에 대해 다뤄본적이 있다면 `Join` 메소드를 생각해보세요.<br>
 문제는 간단합니다. `Main` 메소드는 우리의 `MyFirstAsyncMethod`가 실행을 끝마치기도 전에 먼저 종료되어 프로세스가 끝난 상태가 되어버린 것입니다.<br>
 <br>
